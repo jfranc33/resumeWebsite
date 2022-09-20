@@ -5,9 +5,11 @@ type Props = {}
 
 export default function Landing({ }: Props) {
     return (
-        <div className="w-full ">
-            <div className="flex mx-auto max-w-7xl mt-44">
-                <Introduction />
+        <div>
+            <div className="w-screen h-screen bg-[#264653]">
+                <div className="flex mx-auto max-w-7xl">
+                    <Introduction />
+                </div>
             </div>
         </div>
     )
