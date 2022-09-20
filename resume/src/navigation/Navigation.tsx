@@ -1,17 +1,19 @@
 import React, { ReactElement } from 'react'
+import Landing from '../pages/Landing';
 import {
     BrowserRouter as Router,
     Routes,
     Route,
 } from "react-router-dom";
 
-import Landing from '../pages/Landing';
 
-export default function Navigation(): ReactElement {
+type Props = {}
+
+export default function Navigation({ }: Props) {
     return (
         <Router>
             <Routes>
-                <Route path="/" element = {<Landing />} />
+                <Route path="/" element={<Landing />} />
             </Routes>
         </Router>
     )
